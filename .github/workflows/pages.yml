@@ -5,7 +5,7 @@ name: Deploy puzzles to GitHub Pages
 
 on:
   push:
-    branches: ["claude/german-study-crossword-dkszm8"]
+    branches: ["main"]
     paths:
       - "puzzles/**"
       - "crossword/build_index.py"
