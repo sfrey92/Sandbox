@@ -1,0 +1,44 @@
+name: Deploy puzzles to GitHub Pages
+
+# Publishes the puzzles/ folder to GitHub Pages so the crosswords can be
+# played in a phone browser. Builds the index menu first, then deploys.
+
+on:
+  push:
+    branches: ["claude/german-study-crossword-dkszm8"]
+    paths:
+      - "puzzles/**"
+      - "crossword/build_index.py"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Build puzzle index
+        run: python3 crossword/build_index.py
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./puzzles
+      - id: deployment
+        uses: actions/deploy-pages@v4
