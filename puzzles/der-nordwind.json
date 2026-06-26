@@ -1,0 +1,24 @@
+{
+  "title": "Der Nordwind und die Sonne",
+  "intro": "Vokabeln aus der bekannten Fabel. Alle Hinweise sind auf Deutsch – Umlaute werden als AE, OE, UE geschrieben (Kreuzworträtsel-Konvention).",
+  "entries": [
+    { "answer": "SONNE",     "clue": "Sie scheint am Himmel und spendet Waerme." },
+    { "answer": "NORDWIND",  "clue": "Kalter Wind, der aus dem Norden weht." },
+    { "answer": "WIND",      "clue": "Bewegte Luft, die man im Gesicht spueren kann." },
+    { "answer": "MANTEL",    "clue": "Kleidungsstueck, das man bei Kaelte ueber allem traegt." },
+    { "answer": "WANDERER",  "clue": "Eine Person, die zu Fuss unterwegs ist." },
+    { "answer": "WAERME",    "clue": "Das Gegenteil von Kaelte; sie kommt von der Sonne." },
+    { "answer": "KAELTE",    "clue": "Niedrige Temperatur, die der Nordwind bringt." },
+    { "answer": "STREIT",    "clue": "Eine Auseinandersetzung darueber, wer staerker ist." },
+    { "answer": "STARK",     "clue": "Das Gegenteil von schwach." },
+    { "answer": "HIMMEL",    "clue": "Dort stehen Sonne, Mond und Sterne." },
+    { "answer": "WOLKE",     "clue": "Weisses Gebilde, das am Himmel vorbeizieht." },
+    { "answer": "WEG",       "clue": "Eine Strecke, auf der man wandert." },
+    { "answer": "BLASEN",    "clue": "Was der Wind mit aller Kraft tut." },
+    { "answer": "WARM",      "clue": "Angenehm temperiert, nicht kalt." },
+    { "answer": "SIEGEN",    "clue": "In einem Wettstreit gewinnen." },
+    { "answer": "KRAFT",     "clue": "Staerke, die man zum Blasen oder Heben braucht." },
+    { "answer": "FROST",     "clue": "Eisige Kaelte unter null Grad." },
+    { "answer": "REISE",     "clue": "Eine laengere Fahrt oder Wanderung." }
+  ]
+}
